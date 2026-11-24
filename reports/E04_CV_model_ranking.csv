@@ -1,0 +1,16 @@
+model,target,best_cv_MAE_cm,best_parameters,cv_folds,training_subjects,rank_within_target
+Ridge,arm-length,0.8323156232524678,"{""model__alpha"": 1.0}",5,2018,1.0
+RandomForest,arm-length,1.0077739267253416,"{""max_depth"": null, ""max_features"": 0.7, ""min_samples_leaf"": 1}",5,2018,2.0
+MLP,arm-length,1.5763298868047713,"{""model__alpha"": 0.0001, ""model__hidden_layer_sizes"": [128, 64]}",5,2018,3.0
+Ridge,chest,2.8261939582419444,"{""model__alpha"": 1.0}",5,2018,1.0
+RandomForest,chest,4.025009076991358,"{""max_depth"": 20, ""max_features"": 0.7, ""min_samples_leaf"": 1}",5,2018,2.0
+MLP,chest,4.202330088875536,"{""model__alpha"": 0.01, ""model__hidden_layer_sizes"": [64]}",5,2018,3.0
+Ridge,hip,2.6184019850468316,"{""model__alpha"": 10.0}",5,2018,1.0
+RandomForest,hip,3.6934293722630054,"{""max_depth"": null, ""max_features"": 0.7, ""min_samples_leaf"": 2}",5,2018,2.0
+MLP,hip,3.878664647490447,"{""model__alpha"": 0.01, ""model__hidden_layer_sizes"": [64]}",5,2018,3.0
+Ridge,shoulder-breadth,0.8911365617971663,"{""model__alpha"": 1.0}",5,2018,1.0
+RandomForest,shoulder-breadth,1.115530086339239,"{""max_depth"": 20, ""max_features"": 0.7, ""min_samples_leaf"": 1}",5,2018,2.0
+MLP,shoulder-breadth,1.3827762110953628,"{""model__alpha"": 0.01, ""model__hidden_layer_sizes"": [64]}",5,2018,3.0
+Ridge,waist,3.507116705916009,"{""model__alpha"": 10.0}",5,2018,1.0
+RandomForest,waist,4.506044156244917,"{""max_depth"": 20, ""max_features"": 0.7, ""min_samples_leaf"": 2}",5,2018,2.0
+MLP,waist,4.568855865571288,"{""model__alpha"": 0.0001, ""model__hidden_layer_sizes"": [64]}",5,2018,3.0

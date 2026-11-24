@@ -1,0 +1,19 @@
+# NOTE: .venv/ is intentionally committed for this repository.
+
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Large trained model artifacts (exceed GitHub's 100 MB per-file limit).
+# Rebuild with the E04 training script; metrics/predictions are kept in the repo.
+checkpoints/E04_classical_ml_models.joblib
+reports/P0_baseline_freeze/pre_run_E04/checkpoints/E04_classical_ml_models.joblib
+
+# OS / editor noise
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/

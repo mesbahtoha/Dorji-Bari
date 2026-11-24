@@ -1,0 +1,208 @@
+P0.4D E04 CLEAN REPRODUCTION LOG
+RUN_START_UTC 2026-11-24T09:12:08.066948+00:00
+CWD D:\DorjiBari-P0-Reproduction\DorjiBari_20261124
+DORJIBARI_ROOT D:\DorjiBari-P0-Reproduction\DorjiBari_20261124
+PYTHON 3.14.6 D:\DorjiBari-P0-Reproduction\DorjiBari_20261124\.venv\Scripts\python.exe
+VENV_PREFIX D:\DorjiBari-P0-Reproduction\DorjiBari_20261124\.venv
+VERSIONS numpy 2.5.5 pandas 3.1.1 sklearn 1.9.1 joblib 1.6.0
+EXECUTION_SCOPE bootstrap_prefix + notebook_cell_54_only
+DorjiBari project root: D:\DorjiBari-P0-Reproduction\DorjiBari_20261124
+RESOLVED_PROJECT_ROOT D:\DorjiBari-P0-Reproduction\DorjiBari_20261124
+ROOT_MATCH True
+CELL54_SHA256 69950cfb2090d45d0e4e5e51857dba88d55a4458b86e4ce2649010b3cfee53eb
+CELL54_START 2026-11-24T09:12:13.345739+00:00
+
+======================================================================
+TARGET: chest
+======================================================================
+
+Searching: Ridge
+Best CV MAE: 2.8262
+Best parameters: {'model__alpha': 1.0}
+Completed: Ridge
+
+Searching: RandomForest
+Best CV MAE: 4.025
+Best parameters: {'max_depth': 20, 'max_features': 0.7, 'min_samples_leaf': 1}
+Completed: RandomForest
+
+Searching: MLP
+Best CV MAE: 4.2023
+Best parameters: {'model__alpha': 0.01, 'model__hidden_layer_sizes': (64,)}
+Completed: MLP
+
+======================================================================
+TARGET: waist
+======================================================================
+
+Searching: Ridge
+Best CV MAE: 3.5071
+Best parameters: {'model__alpha': 10.0}
+Completed: Ridge
+
+Searching: RandomForest
+Best CV MAE: 4.506
+Best parameters: {'max_depth': 20, 'max_features': 0.7, 'min_samples_leaf': 2}
+Completed: RandomForest
+
+Searching: MLP
+Best CV MAE: 4.5689
+Best parameters: {'model__alpha': 0.0001, 'model__hidden_layer_sizes': (64,)}
+Completed: MLP
+
+======================================================================
+TARGET: hip
+======================================================================
+
+Searching: Ridge
+Best CV MAE: 2.6184
+Best parameters: {'model__alpha': 10.0}
+Completed: Ridge
+
+Searching: RandomForest
+Best CV MAE: 3.6934
+Best parameters: {'max_depth': None, 'max_features': 0.7, 'min_samples_leaf': 2}
+Completed: RandomForest
+
+Searching: MLP
+Best CV MAE: 3.8787
+Best parameters: {'model__alpha': 0.01, 'model__hidden_layer_sizes': (64,)}
+Completed: MLP
+
+======================================================================
+TARGET: shoulder-breadth
+======================================================================
+
+Searching: Ridge
+Best CV MAE: 0.8911
+Best parameters: {'model__alpha': 1.0}
+Completed: Ridge
+
+Searching: RandomForest
+Best CV MAE: 1.1155
+Best parameters: {'max_depth': 20, 'max_features': 0.7, 'min_samples_leaf': 1}
+Completed: RandomForest
+
+Searching: MLP
+Best CV MAE: 1.3828
+Best parameters: {'model__alpha': 0.01, 'model__hidden_layer_sizes': (64,)}
+Completed: MLP
+
+======================================================================
+TARGET: arm-length
+======================================================================
+
+Searching: Ridge
+Best CV MAE: 0.8323
+Best parameters: {'model__alpha': 1.0}
+Completed: Ridge
+
+Searching: RandomForest
+Best CV MAE: 1.0078
+Best parameters: {'max_depth': None, 'max_features': 0.7, 'min_samples_leaf': 1}
+Completed: RandomForest
+
+Searching: MLP
+Best CV MAE: 1.5763
+Best parameters: {'model__alpha': 0.0001, 'model__hidden_layer_sizes': (128, 64)}
+Completed: MLP
+
+======================================================================
+E04 FINAL TEST RESULTS
+======================================================================
+       model           target split  n_subjects  n_features  CV_MAE_cm  MAE_cm  RMSE_cm      R2
+       Ridge            chest testA          87          53     2.8262  2.7658   3.6143  0.8740
+       Ridge            chest testB         400          53     2.8262  3.5484   4.7654  0.8718
+RandomForest            chest testA          87          53     4.0250  3.8229   4.8571  0.7724
+RandomForest            chest testB         400          53     4.0250  4.9374   6.4506  0.7651
+         MLP            chest testA          87          53     4.2023  3.4899   4.5760  0.7980
+         MLP            chest testB         400          53     4.2023  6.3061   8.4025  0.6014
+       Ridge            waist testA          87          53     3.5071  2.6208   3.6364  0.8770
+       Ridge            waist testB         400          53     3.5071  4.2920   5.5725  0.8502
+RandomForest            waist testA          87          53     4.5060  3.6949   4.7353  0.7914
+RandomForest            waist testB         400          53     4.5060  6.1316   7.7080  0.7134
+         MLP            waist testA          87          53     4.5689  3.6163   4.7813  0.7874
+         MLP            waist testB         400          53     4.5689  7.5862  10.0732  0.5105
+       Ridge              hip testA          87          53     2.6184  2.6478   3.3688  0.8400
+       Ridge              hip testB         400          53     2.6184  3.4934   4.7609  0.8242
+RandomForest              hip testA          87          53     3.6934  3.4489   4.3370  0.7349
+RandomForest              hip testB         400          53     3.6934  4.4440   5.9394  0.7263
+         MLP              hip testA          87          53     3.8787  3.0202   3.9251  0.7829
+         MLP              hip testB         400          53     3.8787  6.7269   8.8120  0.3976
+       Ridge shoulder-breadth testA          87          53     0.8911  0.8412   1.0416  0.8266
+       Ridge shoulder-breadth testB         400          53     0.8911  1.0554   1.3922  0.7746
+RandomForest shoulder-breadth testA          87          53     1.1155  1.1031   1.4054  0.6842
+RandomForest shoulder-breadth testB         400          53     1.1155  1.2783   1.6328  0.6900
+         MLP shoulder-breadth testA          87          53     1.3828  1.2072   1.5334  0.6241
+         MLP shoulder-breadth testB         400          53     1.3828  2.4887   3.3272 -0.2871
+       Ridge       arm-length testA          87          53     0.8323  0.8605   1.0858  0.8786
+       Ridge       arm-length testB         400          53     0.8323  1.0103   1.4534  0.7628
+RandomForest       arm-length testA          87          53     1.0078  1.0714   1.3370  0.8160
+RandomForest       arm-length testB         400          53     1.0078  1.1395   1.6052  0.7107
+         MLP       arm-length testA          87          53     1.5763  1.1467   1.4040  0.7971
+         MLP       arm-length testB         400          53     1.5763  1.9562   2.5413  0.2748
+
+======================================================================
+E04 CROSS-VALIDATION RESULTS
+======================================================================
+       model           target  best_cv_MAE_cm                                                  best_parameters  cv_folds  training_subjects
+       Ridge            chest          2.8262                                            {"model__alpha": 1.0}         5               2018
+RandomForest            chest          4.0250    {"max_depth": 20, "max_features": 0.7, "min_samples_leaf": 1}         5               2018
+         MLP            chest          4.2023        {"model__alpha": 0.01, "model__hidden_layer_sizes": [64]}         5               2018
+       Ridge            waist          3.5071                                           {"model__alpha": 10.0}         5               2018
+RandomForest            waist          4.5060    {"max_depth": 20, "max_features": 0.7, "min_samples_leaf": 2}         5               2018
+         MLP            waist          4.5689      {"model__alpha": 0.0001, "model__hidden_layer_sizes": [64]}         5               2018
+       Ridge              hip          2.6184                                           {"model__alpha": 10.0}         5               2018
+RandomForest              hip          3.6934  {"max_depth": null, "max_features": 0.7, "min_samples_leaf": 2}         5               2018
+         MLP              hip          3.8787        {"model__alpha": 0.01, "model__hidden_layer_sizes": [64]}         5               2018
+       Ridge shoulder-breadth          0.8911                                            {"model__alpha": 1.0}         5               2018
+RandomForest shoulder-breadth          1.1155    {"max_depth": 20, "max_features": 0.7, "min_samples_leaf": 1}         5               2018
+         MLP shoulder-breadth          1.3828        {"model__alpha": 0.01, "model__hidden_layer_sizes": [64]}         5               2018
+       Ridge       arm-length          0.8323                                            {"model__alpha": 1.0}         5               2018
+RandomForest       arm-length          1.0078  {"max_depth": null, "max_features": 0.7, "min_samples_leaf": 1}         5               2018
+         MLP       arm-length          1.5763 {"model__alpha": 0.0001, "model__hidden_layer_sizes": [128, 64]}         5               2018
+
+Saved metrics: D:\DorjiBari-P0-Reproduction\DorjiBari_20261124\experiments\metrics\E04_classical_ml_metrics.csv
+Saved CV results: D:\DorjiBari-P0-Reproduction\DorjiBari_20261124\experiments\E04_classical_ml\E04_cross_validation_results.csv
+Saved predictions: D:\DorjiBari-P0-Reproduction\DorjiBari_20261124\experiments\predictions\E04_classical_ml_predictions.csv
+Saved models: D:\DorjiBari-P0-Reproduction\DorjiBari_20261124\checkpoints\E04_classical_ml_models.joblib
+Saved config: D:\DorjiBari-P0-Reproduction\DorjiBari_20261124\experiments\E04_classical_ml\E04_experiment_config.json
+
+PASS: E04 model comparison completed.
+CELL54_ELAPSED_SECONDS 893.667
+CELL54_EXIT_CODE 0
+CV_ROWS 15
+RIDGE_ALPHA chest {"model__alpha": 1.0}
+CV_RESULT Ridge chest 2.8261939582419444
+CV_RESULT RandomForest chest 4.025009076991358
+CV_RESULT MLP chest 4.202330088875536
+RIDGE_ALPHA waist {"model__alpha": 10.0}
+CV_RESULT Ridge waist 3.507116705916009
+CV_RESULT RandomForest waist 4.506044156244917
+CV_RESULT MLP waist 4.568855865571288
+RIDGE_ALPHA hip {"model__alpha": 10.0}
+CV_RESULT Ridge hip 2.6184019850468316
+CV_RESULT RandomForest hip 3.6934293722630054
+CV_RESULT MLP hip 3.878664647490447
+RIDGE_ALPHA shoulder-breadth {"model__alpha": 1.0}
+CV_RESULT Ridge shoulder-breadth 0.8911365617971663
+CV_RESULT RandomForest shoulder-breadth 1.115530086339239
+CV_RESULT MLP shoulder-breadth 1.3827762110953628
+RIDGE_ALPHA arm-length {"model__alpha": 1.0}
+CV_RESULT Ridge arm-length 0.8323156232524678
+CV_RESULT RandomForest arm-length 1.0077739267253416
+CV_RESULT MLP arm-length 1.5763298868047713
+ARTIFACT experiments/E04_classical_ml/E04_experiment_config.json exists True bytes 2218
+ARTIFACT experiments/E04_classical_ml/E04_cross_validation_results.csv exists True bytes 1532
+ARTIFACT experiments/predictions/E04_classical_ml_predictions.csv exists True bytes 749763
+ARTIFACT experiments/metrics/E04_classical_ml_metrics.csv exists True bytes 3201
+ARTIFACT checkpoints/E04_classical_ml_models.joblib exists True bytes 142942729
+RUN_END_UTC 2026-11-24T09:27:01.764357+00:00
+
+OBSERVED_CONSOLE_WARNINGS
+Seven ConvergenceWarning occurrences were observed in the execution console during MLP fitting.
+The repeated message was:
+D:\DorjiBari-P0-Reproduction\DorjiBari_20261124\.venv\Lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:785: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1500) reached and the optimization hasn't converged yet.
+  warnings.warn(
+NOTE: these child-process warnings were emitted to the console and were not captured in the redirected Python stdout/stderr stream above. No error occurred; the cell exited 0.
+

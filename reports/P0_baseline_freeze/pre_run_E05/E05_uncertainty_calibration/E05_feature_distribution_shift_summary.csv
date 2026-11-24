@@ -1,0 +1,3 @@
+split,n_features,features_SMD_ge_0.5,features_SMD_ge_0.8,features_KS_FDR_below_0.05,mean_absolute_SMD,median_absolute_SMD,mean_normalized_wasserstein
+TestA,53,6,2,33,0.2686172966824535,0.21313565915649227,0.3286409478748609
+TestB,53,2,0,50,0.2017184681851667,0.1647950629808741,0.27576790157852754

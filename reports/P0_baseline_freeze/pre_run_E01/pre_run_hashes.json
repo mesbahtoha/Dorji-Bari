@@ -1,0 +1,22 @@
+﻿{
+    "experiments\\E01_height_only\\training_target_medians.csv":  {
+                                                                      "bytes":  152,
+                                                                      "sha256":  "85CD2739355B4509D96529ED629086A601C171CA61FFCCAB9B85DAE433610D5D"
+                                                                  },
+    "checkpoints\\E01_height_only_ridge_models.joblib":  {
+                                                             "bytes":  3863,
+                                                             "sha256":  "D6BE77A1A1E12C207205B1B09B7A386F9920747AE680373740A81F84458D3751"
+                                                         },
+    "experiments\\predictions\\E01_height_only_predictions.csv":  {
+                                                                      "bytes":  160338,
+                                                                      "sha256":  "579E9D128D646F8EEE7B01642BCF17A0AF740717D951BFF7B2C1BE3B657D2220"
+                                                                  },
+    "experiments\\E01_height_only\\E01_config.json":  {
+                                                          "bytes":  590,
+                                                          "sha256":  "79B1EB81C6E0B99F9CAD070231EA56CB16651FCA9C5FBDA855944AAAB2533CD0"
+                                                      },
+    "experiments\\metrics\\E01_height_only_metrics.csv":  {
+                                                              "bytes":  1898,
+                                                              "sha256":  "3641B88334009DE81D4BAD19CC446E283C0FFE2DFAE819D8A56420C8E43236F3"
+                                                          }
+}

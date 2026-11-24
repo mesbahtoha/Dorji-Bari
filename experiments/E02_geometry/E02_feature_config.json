@@ -1,0 +1,29 @@
+{
+    "experiment": "E02_geometry",
+    "input_views": [
+        "front",
+        "side"
+    ],
+    "image_size": [
+        256,
+        256
+    ],
+    "feature_groups": [
+        "bounding_box",
+        "foreground_area",
+        "fill_ratio",
+        "horizontal_centroid",
+        "vertical_width_profile"
+    ],
+    "vertical_profile_bins": 20,
+    "aggregation": "subject_level_median",
+    "targets": [
+        "chest",
+        "waist",
+        "hip",
+        "shoulder-breadth",
+        "arm-length"
+    ],
+    "input_height_included": true,
+    "training_unit": "unique_subject"
+}

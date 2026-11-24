@@ -1,0 +1,23 @@
+{
+    "total_records": 140,
+    "records_by_experiment": {
+        "E03": 60,
+        "E02": 30,
+        "E04": 30,
+        "E01": 20
+    },
+    "duplicate_rows": 0,
+    "missing_metric_values": 0,
+    "consistency_checks": {
+        "E01_Ridge_vs_E02_height_only": true,
+        "E02_geometry_vs_E03_both_views": true,
+        "E02_combined_vs_E03_height_plus_both": true
+    },
+    "E04_CV_selected_models": {
+        "arm-length": "Ridge",
+        "chest": "Ridge",
+        "hip": "Ridge",
+        "shoulder-breadth": "Ridge",
+        "waist": "Ridge"
+    }
+}

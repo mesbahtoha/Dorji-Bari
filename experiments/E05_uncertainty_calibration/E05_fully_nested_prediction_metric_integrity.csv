@@ -1,0 +1,16 @@
+target,estimator,n_subjects,recalculated_MAE,reported_MAE,difference,status
+arm-length,median_baseline_estimate,2018,0.5012191637165336,0.5012,1.916371653365445e-05,PASS
+arm-length,ridge_uncertainty_estimate,2018,0.5177942992148388,0.5178,-5.700785161266708e-06,PASS
+arm-length,extra_trees_uncertainty_estimate,2018,0.518039448839754,0.518,3.944883975393054e-05,PASS
+chest,median_baseline_estimate,2018,1.7586114823744954,1.7586,1.148237449544176e-05,PASS
+chest,ridge_uncertainty_estimate,2018,1.8089187715258734,1.8089,1.8771525873484407e-05,PASS
+chest,extra_trees_uncertainty_estimate,2018,1.7646770592027814,1.7647,-2.2940797218540254e-05,PASS
+hip,median_baseline_estimate,2018,1.624902989274436,1.6249,2.989274435982736e-06,PASS
+hip,ridge_uncertainty_estimate,2018,1.6148334424941064,1.6148,3.344249410641709e-05,PASS
+hip,extra_trees_uncertainty_estimate,2018,1.562321956778689,1.5623,2.1956778688991818e-05,PASS
+shoulder-breadth,median_baseline_estimate,2018,0.5456567555791603,0.5457,-4.3244420839694264e-05,PASS
+shoulder-breadth,ridge_uncertainty_estimate,2018,0.5687611450233573,0.5688,-3.885497664268822e-05,PASS
+shoulder-breadth,extra_trees_uncertainty_estimate,2018,0.5628395388975217,0.5628,3.953889752172923e-05,PASS
+waist,median_baseline_estimate,2018,2.1507215459021176,2.1507,2.1545902117559024e-05,PASS
+waist,ridge_uncertainty_estimate,2018,2.1701370867806595,2.1701,3.708678065938997e-05,PASS
+waist,extra_trees_uncertainty_estimate,2018,2.144338015114716,2.1443,3.801511471612784e-05,PASS

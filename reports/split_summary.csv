@@ -1,0 +1,4 @@
+split,photo_pairs,unique_subjects
+train,6133,2018
+testA,1684,87
+testB,1158,400

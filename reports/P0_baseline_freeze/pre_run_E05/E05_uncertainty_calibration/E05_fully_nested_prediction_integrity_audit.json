@@ -1,0 +1,29 @@
+{
+    "step": "40.17",
+    "input_rows": 10090,
+    "unique_subjects": 2018,
+    "targets": 5,
+    "outer_folds": 5,
+    "duplicate_target_subject_rows": 0,
+    "finite_value_audit": {
+        "actual_base_absolute_error": {
+            "finite": 10090,
+            "nonfinite": 0
+        },
+        "median_baseline_estimate": {
+            "finite": 10090,
+            "nonfinite": 0
+        },
+        "ridge_uncertainty_estimate": {
+            "finite": 10090,
+            "nonfinite": 0
+        },
+        "extra_trees_uncertainty_estimate": {
+            "finite": 10090,
+            "nonfinite": 0
+        }
+    },
+    "metric_comparison_records": 15,
+    "metric_comparisons_passed": 15,
+    "overall_pass": true
+}

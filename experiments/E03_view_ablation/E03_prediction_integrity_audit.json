@@ -1,0 +1,20 @@
+{
+    "experiment": "E03",
+    "prediction_rows": 2922,
+    "expected_rows": 2922,
+    "testA_subjects": 87,
+    "testB_subjects": 400,
+    "configurations": [
+        "front_only",
+        "side_only",
+        "both_views",
+        "height_plus_front",
+        "height_plus_side",
+        "height_plus_both"
+    ],
+    "all_predictions_finite": true,
+    "actual_labels_consistent": true,
+    "E02_E03_both_views_match": true,
+    "E02_E03_height_plus_both_match": true,
+    "train_subjects_in_test_predictions": 0
+}

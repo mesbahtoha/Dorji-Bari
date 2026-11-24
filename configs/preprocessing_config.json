@@ -1,0 +1,47 @@
+{
+    "config_name": "bodym_silhouette_preprocessing",
+    "version": "1.0",
+    "source": {
+        "original_width": 720,
+        "original_height": 960,
+        "image_type": "binary_silhouette",
+        "background_value": 0,
+        "foreground_value": 255
+    },
+    "output": {
+        "width": 256,
+        "height": 256,
+        "channels": 1,
+        "data_type": "float32",
+        "normalization": "divide_by_255",
+        "pixel_range": [
+            0.0,
+            1.0
+        ]
+    },
+    "resize": {
+        "method": "aspect_ratio_preserving",
+        "interpolation": "INTER_NEAREST",
+        "resized_width": 192,
+        "resized_height": 256
+    },
+    "padding": {
+        "method": "center",
+        "top": 0,
+        "bottom": 0,
+        "left": 32,
+        "right": 32,
+        "value": 0
+    },
+    "views": {
+        "front": "mask",
+        "side": "mask_left",
+        "preprocess_independently": true
+    },
+    "data_integrity": {
+        "modify_original_images": false,
+        "preserve_aspect_ratio": true,
+        "preserve_binary_values": true,
+        "allow_cropping": false
+    }
+}

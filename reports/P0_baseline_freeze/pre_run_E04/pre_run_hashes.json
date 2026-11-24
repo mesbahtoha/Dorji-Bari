@@ -1,0 +1,27 @@
+﻿{
+    "checkpoints\\E04_classical_ml_models.joblib":  {
+                                                        "sha256":  "59281F9260AAEDE2AAB68D0D189B89A11248D27CFFC0061005D512CF27017B32",
+                                                        "bytes":  142942729,
+                                                        "matches_backup":  true
+                                                    },
+    "experiments\\E04_classical_ml\\E04_experiment_config.json":  {
+                                                                      "sha256":  "421D86242F0DF30B2D6BB4C445AFC82768A0045B3551F9D0FDBF6E23419D4495",
+                                                                      "bytes":  2218,
+                                                                      "matches_backup":  true
+                                                                  },
+    "experiments\\predictions\\E04_classical_ml_predictions.csv":  {
+                                                                       "sha256":  "16A80DA03EDC7B1B59DB287C7D6FB4E2B09585321AFE4AF02809915E286F5734",
+                                                                       "bytes":  749763,
+                                                                       "matches_backup":  true
+                                                                   },
+    "experiments\\metrics\\E04_classical_ml_metrics.csv":  {
+                                                               "sha256":  "239614B627B94F3F2AD1746777F105E0E1073209C224A015DCE944F461661E5D",
+                                                               "bytes":  3201,
+                                                               "matches_backup":  true
+                                                           },
+    "experiments\\E04_classical_ml\\E04_cross_validation_results.csv":  {
+                                                                            "sha256":  "BFA1D99CEF7E50BF4C1289966484EFB9B48B251898C1848A79EE72BEFE0D5C39",
+                                                                            "bytes":  1532,
+                                                                            "matches_backup":  true
+                                                                        }
+}

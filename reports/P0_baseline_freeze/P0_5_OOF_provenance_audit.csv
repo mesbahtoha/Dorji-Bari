@@ -1,0 +1,18 @@
+check_id,check,expected,expected_value,observed,status,evidence,limitations
+OOF-01,OOF row count,10090 expected,10090,10090,PASS,nested_cv_oof_predictions.csv,one row per subject-target
+OOF-02,Training subjects,2018 expected,2018,2018,PASS,nested_cv_oof_predictions.csv,all Train subjects
+OOF-03,Targets,5 expected,"chest, waist, hip, shoulder-breadth, arm-length",5,PASS,nested_cv_oof_predictions.csv,
+OOF-04,Unique target-subject keys,0 duplicates,0,0,PASS,nested_cv_oof_predictions.csv,
+OOF-05,Missing/nonfinite OOF values,0,0,0,PASS,nested_cv_oof_predictions.csv,
+OOF-06,Actual values match Train features,exact,0.000e+00 max abs diff,0.000e+00 max abs diff,PASS,E02 subject feature table vs nested OOF,
+OOF-07,TestA/TestB IDs absent from OOF,0 overlap,0,"TestA 0, TestB 0",PASS,subject feature tables,
+OOF-08,Outer folds,5,5,5 (counts 404/404/404/403/403 per target),PASS,E05_fully_nested_uncertainty_predictions.csv,
+OOF-09,One outer fold per subject-target,one,one,max outer folds per subject = 1,PASS,E05_fully_nested_uncertainty_predictions.csv,
+OOF-10,Inner-fold assignments saved,4 inner folds + subject assignments,not present,0 CSV with inner-fold columns; config says 4; cell 62 uses GroupKFold(4),NOT VERIFIABLE,E05 dir / config / notebook cell 62,inner membership absent
+OOF-11,Uncertainty inner-fold count,4 documented,4,cell 76 uses GroupKFold(5),INCONSISTENT,nested_cv_calibration_config.json vs notebook cell 76,documented 4 vs code 5
+OOF-12,Outer validation excluded from outer training,required,not saved,outer fold counts only; no subject-level training-set membership,NOT VERIFIABLE,nested_cv_fold_results.csv,cannot test leakage from aggregates
+OOF-13,Inner grouping/no subject leakage,subject_id GroupKFold required,code uses GroupKFold; assignments absent,no inner fold membership artifact,NOT VERIFIABLE,notebook cell 62/76,code inspection only
+OOF-14,Uncertainty model inputs are saved OOF residuals,same OOF residuals,not same,actual_base error differs in 4438/10090 rows; max diff 2.645083 cm; base alpha fixed at 1.0; saved point OOF used tuned alpha,INCONSISTENT,nested_cv_oof_predictions.csv vs E05_fully_nested_uncertainty_predictions.csv; cell 76,"fresh inner OOF residuals, not saved nested OOF"
+OOF-15,No TestA/TestB labels/errors used,no test use,config says false,OOF contains Train IDs only; no training log,PARTIAL,calibration config / OOF IDs,no execution log; config is self-report
+OOF-16,Saved artifacts prove 5x4 nested CV,fold assignments + inner results,not saved,no inner membership; uncertainty cell uses 5 inner folds; fold results only aggregate counts,NOT VERIFIABLE,all E05 files,cannot prove full 5x4 from artifacts
+OOF-17,Uncertainty model artifact saved,model file,not found,joblib/pkl files in E05 dir: [],NOT FOUND,E05 dir,uncertainty model provenance cannot be independently reloaded

@@ -1,0 +1,51 @@
+# Local CPU environment for DorjiBari-Research
+#
+# Derived from the imports actually used by notebooks 01-03:
+#   boto3 / botocore, cv2, IPython, joblib, matplotlib, numpy, pandas,
+#   PIL (pillow), scikit-learn, scipy, statsmodels, torch, tqdm
+# plus ipykernel / nbformat / nbclient for running the notebooks in VS Code
+# or Jupyter.
+#
+# Target interpreter: Python 3.14.6 (Windows or Linux), CPU only.
+# No CUDA / GPU is required and torch.cuda.is_available() is expected False.
+#
+# The ORIGINAL Colab environment is recorded in environment_report.txt
+# (Python 3.13.16, torch 2.14.1+cu130, OpenCV 4.14.0, NumPy 2.4.6,
+# Pandas 2.2.3, scikit-learn 1.6.1, Tesla T4) and in requirements.txt,
+# which is a full pip freeze of that session. Do not install requirements.txt
+# blindly on a different platform.
+#
+# Version note: Python 3.14 has no wheels for the exact Colab versions of
+# pandas (2.2.3) and NumPy (2.4.6). The pins below are the versions verified
+# to import and run on Python 3.14.6. Numerical behaviour is unchanged for
+# the APIs used by these notebooks, but formatting-level differences are
+# possible. Use Colab with the original freeze when byte-level parity with
+# the recorded run is required.
+
+# Core scientific stack
+numpy==2.5.5
+pandas==3.1.1
+scipy==1.18.1
+scikit-learn==1.9.1
+statsmodels==0.15.0
+
+# Imaging
+matplotlib==3.11.2
+opencv-python==4.14.0.94
+pillow==13.0.0
+
+# Data access
+boto3==1.44.6
+botocore==1.44.6
+
+# Utilities
+joblib==1.6.0
+tqdm==4.70.1
+
+# Deep-learning runtime (CPU build on Windows; no CUDA required)
+torch==2.15.0
+
+# Notebook execution (VS Code / Jupyter)
+ipykernel==7.4.0
+nbformat==5.11.1
+nbclient==0.11.0

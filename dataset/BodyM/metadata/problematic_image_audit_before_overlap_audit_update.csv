@@ -1,0 +1,4 @@
+split,subject_id,photo_id,view,issue,severity,decision,removed_from_dataset
+testB,3hpDSNj5_25ceylKU4jJLSldgKCE4QJRGi2mmPqAcOA,6b25639753d2cecde54f99523f675ccc,front,Large detached foreground component,High,Flagged - exclude photo pair from paired-view input,False
+train,Xgshyw2K_FeeM3GNCyfoS5pJoTNIfEGMf1qKQxiO5YU,49e8f991af693b63836a077a636aa037,side,Large irregular foreground region,High,Flagged - exclude photo pair from paired-view input,False
+testB,3hpDSNj5_25ceylKU4jJLSldgKCE4QJRGi2mmPqAcOA,6b25639753d2cecde54f99523f675ccc,side,Detached foreground component below feet,Medium,Flagged - exclude photo pair from paired-view input,False

@@ -1,0 +1,90 @@
+P0 FINAL INTEGRITY VERIFICATION
+Date: 2026-11-24
+Working root: D:\DorjiBari-P0-Reproduction\DorjiBari_20261124
+Original project: D:\DorjiBari-Research (read-only)
+Verified backup: D:\DorjiBari-P0-Backups\DorjiBari_20261124 (read-only)
+
+1. FILE COUNTS
+Original project (excluding .venv/.vscode): 18,132 files
+Verified backup: 18,125 files
+Backup bytes: 255,717,339
+P0.1 inventory: 18,125 PRESENT rows; 3 MISSING expected E02 feature-extraction failure CSVs
+P0.1 critical SHA-256 verification: 143 critical files; 0 mismatches
+
+2. E01/E04 ARTIFACT INTEGRITY
+All 10 E01/E04 artifacts are byte-identical to the verified backup:
+- experiments/E01_height_only/E01_config.json
+- experiments/E01_height_only/training_target_medians.csv
+- experiments/predictions/E01_height_only_predictions.csv
+- experiments/metrics/E01_height_only_metrics.csv
+- checkpoints/E01_height_only_ridge_models.joblib
+- experiments/E04_classical_ml/E04_experiment_config.json
+- experiments/E04_classical_ml/E04_cross_validation_results.csv
+- experiments/predictions/E04_classical_ml_predictions.csv
+- experiments/metrics/E04_classical_ml_metrics.csv
+- checkpoints/E04_classical_ml_models.joblib
+
+3. E05-U ARTIFACT INTEGRITY
+41/41 E05 directory files match the verified backup by SHA-256.
+No E05 file was modified, deleted, renamed, or regenerated.
+E05 pre-analysis preservation: reports/P0_baseline_freeze/pre_run_E05 (45 files).
+
+4. OFFICIAL MANIFESTS AND SPLITS
+Train, TestA and TestB official manifest hashes match the backup.
+Train: 6,133 pairs / 2,018 subjects
+TestA: 1,684 pairs / 87 subjects
+TestB: 1,158 pairs / 400 subjects
+Processed PNGs: 17,950.
+Shared TestA-TestB source ID retained:
+TlIG_3sXZLuH7T9nQMivDNnzJn4fFYQy1P0KqC3ldUQ
+TestA occurrences: 22; TestB official occurrences: 6. Identity remains unverified.
+TestB clean_manifest remains 1,159 rows (official 1,158), including QC-excluded pair:
+578f12cd7dbbf39ccebc3116eaea41d6
+No split, manifest, image, or dataset correction was made.
+
+5. E01/E04 REPRODUCTION
+E01: 487/487 predictions exact; 20/20 metrics exact; config, medians, predictions, metrics and checkpoint byte-identical.
+E04: 7,305/7,305 predictions exact; 30/30 metrics exact; 15/15 CV rows exact; config, CV results, predictions, metrics and checkpoint byte-identical.
+E01 outputs remained unchanged after E04.
+Full E04 cell executed: Ridge, RandomForest and MLP; seven MLP ConvergenceWarnings; no errors.
+No exact historical Colab command, kernel, hardware, or full warning stream is archived.
+
+6. P0.5 E05-U AUDIT
+Coverage: 30/30 groups computed exactly from saved bounds; max coverage/gap difference 0.0; max mean-width difference <=7.1e-15 cm.
+TestA mean coverage: 0.89885 (4/15 below nominal).
+TestB mean coverage: 0.81200 (15/15 below nominal).
+Uncertainty MAE: median baseline 1.316222; ExtraTrees 1.310443; improvement 0.4391%.
+Hip ±5 cm Ridge: 50.7519% capture; 2.5351 enrichment; 2,000-iteration percentile bootstrap, seed 42.
+OOF: 10,090 rows; 2,018 subjects; 5 targets; 0 duplicate subject-target keys; no TestA/TestB IDs.
+OOF provenance limitations remain: no inner-fold assignments; config 4 vs uncertainty code 5; fixed-alpha base differs from saved OOF in 4,438/10,090 rows (max 2.645083 cm); no saved uncertainty model; no TestA/TestB risk scores.
+
+7. DOCUMENTATION RECONCILIATION
+Seven P0 documentation files were copied from the original project after SHA-256 verification:
+01_P0_artifact_inventory.csv, 02_P0_dataset_integrity.md, 03_P0_metric_recomputation.csv,
+P0_metric_mismatches.csv, P0_1B_backup_inventory_summary.md, P0_3_metric_audit.md,
+P0_4A_reproduction_preflight.md.
+No historical experiment artifact was copied or replaced.
+P0_1B now documents the relocated preprocessed checkpoint manifests.
+The ± note in the generated P0_5_risk_ranking_audit.csv was corrected; no numerical data changed.
+
+8. REQUIRED FINAL OUTPUTS
+P0_final_deliverable_inventory.csv: PRESENT
+P0_final_status_matrix.csv: PRESENT
+P0_final_consolidation_audit.md: PRESENT
+P0_6_supervisor_report_input.md: PRESENT
+P0_final_integrity_verification.txt: PRESENT
+06_P0_Baseline_Freeze_Report.pdf/.docx: NOT CREATED (intentional).
+
+9. PROTECTION STATUS
+Original project: unchanged.
+Verified backup: unchanged.
+Historical notebooks/scripts: unchanged.
+E01-E05 historical artifacts: unchanged.
+Official splits: unchanged.
+Shared ID: retained.
+TestB clean-manifest discrepancy: retained and documented.
+All newly generated audit files are inside the reproduction root.
+
+OVERALL DOCUMENTATION STATUS: P0.1-P0.5 RECHECK COMPLETE
+P0.6 READINESS: READY WITH LIMITATIONS
+SUPERVISOR APPROVAL: PENDING

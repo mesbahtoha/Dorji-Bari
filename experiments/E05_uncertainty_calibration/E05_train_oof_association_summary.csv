@@ -1,0 +1,6 @@
+target,features_tested,FDR_significant_features,strongest_absolute_rho
+arm-length,53,1,0.08038392252685855
+chest,53,21,0.17945626938510972
+hip,53,35,0.22839753716209305
+shoulder-breadth,53,1,0.07468957359629513
+waist,53,14,0.1344571720057199

@@ -1,0 +1,12 @@
+BODYM DATASET STRUCTURE AUDIT
+==================================================
+
+Bucket: amazon-bodym
+Region: us-west-2
+
+TOP-LEVEL DIRECTORIES:
+DIR: testA/
+DIR: testB/
+DIR: train/
+
+ROOT-LEVEL FILES:

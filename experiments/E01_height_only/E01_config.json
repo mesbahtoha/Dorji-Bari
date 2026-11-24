@@ -1,0 +1,27 @@
+{
+    "experiment": "E01_height_only",
+    "input_features": [
+        "height_cm"
+    ],
+    "targets": [
+        "chest",
+        "waist",
+        "hip",
+        "shoulder-breadth",
+        "arm-length"
+    ],
+    "methods": [
+        "training_median",
+        "standard_scaler_ridge"
+    ],
+    "ridge_alpha": 1.0,
+    "training_unit": "unique_subject",
+    "evaluation_unit": "unique_subject",
+    "training_split": "train",
+    "evaluation_splits": [
+        "testA",
+        "testB"
+    ],
+    "target_unit": "cm",
+    "test_data_used_for_training": false
+}

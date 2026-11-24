@@ -1,0 +1,15 @@
+{
+    "E02_prediction_rows": 1461,
+    "expected_prediction_rows": 1461,
+    "testA_subjects": 87,
+    "testB_subjects": 400,
+    "configurations": [
+        "height_only",
+        "geometry_only",
+        "height_plus_geometry"
+    ],
+    "actual_values_consistent": true,
+    "E01_E02_height_only_predictions_match": true,
+    "E01_E02_height_only_metrics_match": true,
+    "train_subjects_in_test_predictions": 0
+}

@@ -1,0 +1,18 @@
+{
+  "step": "40.20",
+  "created_utc": "2026-11-19T11:13:37.581531+00:00",
+  "expected_artifacts": 21,
+  "existing_artifacts": 21,
+  "missing_artifacts": [],
+  "read_errors": [],
+  "nested_uncertainty_metric_rows": 15,
+  "tolerance_sensitivity_rows": 120,
+  "tolerance_bootstrap_rows": 30,
+  "best_tolerance_summary_rows": 15,
+  "testb_under_nominal_interval_count": 15,
+  "testb_interval_combinations": 15,
+  "integrity_audit_loaded": true,
+  "report_path": "d:\\DorjiBari-Research\\reports\\E05_final_evidence_and_limitations.md",
+  "inventory_path": "d:\\DorjiBari-Research\\reports\\E05_final_artifact_inventory.csv",
+  "best_tolerance_summary_path": "d:\\DorjiBari-Research\\reports\\E05_tolerance_best_model_summary.csv"
+}

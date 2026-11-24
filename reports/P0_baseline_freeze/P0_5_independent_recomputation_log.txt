@@ -1,0 +1,38 @@
+P0.5 INDEPENDENT RECOMPUTATION LOG
+date=2026-11-24T09:48:01.486623+00:00
+working_root=D:\DorjiBari-P0-Reproduction\DorjiBari_20261124
+python=3.14.6
+numpy=2.5.5
+pandas=3.1.1
+scope=read-only audit of saved E05 artifacts; no E05 retraining; no E01/E04 rerun
+artifacts_inventoried=46
+artifact_hashes_sha256=computed for all present artifacts
+OOF rows=10090 subjects=2018 targets=5 duplicate_target_subject=0 finite=TRUE
+OOF_actual_vs_feature_maxdiff=0
+OOF_subject_target_keys_same_as_fully_nested=True
+OOF_vs_FN_actual_error_mismatch_rows=4438 maxdiff=2.6450832465270651
+outer_folds=5 validation_counts=404/404/404/403/403 per target
+inner_assignments_saved=FALSE inner_assignment_csv_files=[]
+config_inner_folds=4; cell62_base_inner=GroupKFold(4); cell76_uncertainty_inner=GroupKFold(5); BASE_ALPHA_fixed=1.0=True
+coverage_rows=7305 coverage_groups=30 status=PASS testB_below_nominal=15/15
+coverage_mean_abs_gap_testA=0.031072796934865903 coverage_mean_abs_gap_testB=0.071333333333333346
+uncertainty_metric_maxdiff_MAE_R2_corr=(1.1102230246251565e-16, 1.1102230246251565e-16, 5.551115123125783e-17)
+uncertainty_overall_MAE_median_baseline=1.3162223873693486
+uncertainty_overall_MAE_extra_trees=1.3104432037666922
+uncertainty_overall_improvement_pct=0.43907349229995113
+risk_top20_scope=Train_OOF n=2018 k=404; testA/testB uncertainty/risk scores absent
+hip_5cm_ridge_capture_pct=50.75187969924813 enrichment=2.5350815156703645 (Train OOF)
+hip_5cm_extra_trees_capture_pct=49.24812030075188 enrichment=2.4599679892801314
+bootstrap_seed=42 iterations=2000; independently reproduced top20 and tolerance percentile CIs with maxdiff 0.0
+warnings/errors=none during audit; no model fit, no E05 pipeline execution
+outputs=P0_5_E05_artifact_inventory.csv; P0_5_OOF_provenance_audit.csv; P0_5_coverage_recomputation.csv; P0_5_uncertainty_model_comparison.csv; P0_5_risk_ranking_audit.csv
+scripts=p0_5_diag.py; p0_5_generate.py; p0_5_validate_outputs.py (temporary, outside project root)
+commands=.venv\Scripts\python.exe <script>; no training command was executed
+pre_run_E05=reports/P0_baseline_freeze/pre_run_E05 (45 files, 12,191,732 bytes copied before analysis)
+coverage_max_abs_diff_vs_history=0.0 (coverage/gap), <=7.1e-15 (mean width)
+risk_point_metrics_match_history=TRUE; top20 and tolerance point estimates exact
+bootstrap_ci_reproduction=TRUE; percentile bootstrap, 2,000 iterations, seed=42, maxdiff=0.0
+testA_testB_risk_ranking=NOT VERIFIABLE (no saved test uncertainty/risk scores)
+nested_5x4_claim=NOT VERIFIABLE/INCONSISTENT (no inner fold assignments; config 4 vs uncertainty code 5; fixed-alpha base differs from saved OOF)
+output_report=05_P0_E05_uncertainty_audit.md
+

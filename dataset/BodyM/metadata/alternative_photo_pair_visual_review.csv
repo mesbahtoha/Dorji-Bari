@@ -1,0 +1,9 @@
+split,subject_id,photo_id,front_view_status,side_view_status,decision
+testB,3hpDSNj5_25ceylKU4jJLSldgKCE4QJRGi2mmPqAcOA,9a685a95bdbc4e24bf7b6e7653b4aa17,Accept - user visually verified,Accept - user visually verified,Accepted as alternative photo pair
+testB,3hpDSNj5_25ceylKU4jJLSldgKCE4QJRGi2mmPqAcOA,d5cc73027431175b7b4e4217b7ff56dd,Accept - user visually verified,Accept - user visually verified,Accepted as alternative photo pair
+train,Xgshyw2K_FeeM3GNCyfoS5pJoTNIfEGMf1qKQxiO5YU,5e4072c0700d2208c71ffcfc753e13bd,Accept - user visually verified,Accept - user visually verified,Accepted as alternative photo pair
+train,Xgshyw2K_FeeM3GNCyfoS5pJoTNIfEGMf1qKQxiO5YU,60a29701e0b9ab2accb0bff44676a57b,Accept - user visually verified,Accept - user visually verified,Accepted as alternative photo pair
+train,Xgshyw2K_FeeM3GNCyfoS5pJoTNIfEGMf1qKQxiO5YU,60a760f1b45a84eebbfb4c0b4080139e,Accept - user visually verified,Accept - user visually verified,Accepted as alternative photo pair
+train,Xgshyw2K_FeeM3GNCyfoS5pJoTNIfEGMf1qKQxiO5YU,8ae9aed074c4c49bfcf2f0faeede7270,Accept - user visually verified,Accept - user visually verified,Accepted as alternative photo pair
+train,Xgshyw2K_FeeM3GNCyfoS5pJoTNIfEGMf1qKQxiO5YU,95c9649da7ec2719e3b86d5b9948850b,Accept - user visually verified,Accept - user visually verified,Accepted as alternative photo pair
+train,Xgshyw2K_FeeM3GNCyfoS5pJoTNIfEGMf1qKQxiO5YU,d8b3ce9af9d8bd3707200135ff9cdd8a,Accept - user visually verified,Accept - user visually verified,Accepted as alternative photo pair

@@ -1,0 +1,4 @@
+split,expected_pairs,manifest_pairs,checked_images,missing_files,invalid_files
+train,6133,6133,12266,0,0
+testA,1684,1684,3368,0,0
+testB,1158,1158,2316,0,0
